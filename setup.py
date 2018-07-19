@@ -16,18 +16,15 @@ setup(
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     license='BSD-3-Clause',
-    install_requires=[
-        'numpy',
-    ]
+    install_requires=[ 'numpy' ],
 
     # Which Python importable modules should be included when your package is installed
-    packages=['fomms_integrate', "fomms_integrate.tests"],
+    packages=['fomms_integrate', 'fomms_integrate.tests'],
 
     # Optional include package data to ship with your package
     # Comment out this line to prevent the files from being packaged with your software
     # Extend/modify the list to include/exclude other items as need be
-    package_data={'fomms_integrate': ["data/*.dat"]
-                  },
+    package_data={'fomms_integrate': ["data/*.dat"] }
 
     # Additional entries you may want simply uncomment the lines you want and fill in the data
     # author_email='me@place.org',      # Author email
